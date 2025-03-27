@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { submitFilm } from "../Services/fimService";
+import { submitFilm } from "../services/fimService";
 
 const Form = () => {
   const nameRef = useRef<HTMLInputElement>(null);
@@ -61,7 +61,7 @@ const Form = () => {
             </select>
           </div>
           <p></p>
-          <button type="submit" className="btn btn-primary mt-2">
+          <button type="submit" className="nes-btn  mt-2">
             Submit
           </button>
         </form>

@@ -1,4 +1,4 @@
-import { FilmData } from "../Types/FilmData";
+import { FilmData } from "../types/FilmData";
 
 const API_BASE = "http://localhost/app/Connection";
 

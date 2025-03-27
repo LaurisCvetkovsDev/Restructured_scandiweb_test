@@ -66,13 +66,41 @@
     object-position: center;
     padding: 2%; 
   }
-  #Title{
-    height:50px;
-    padding: 2%;
-  }
+  
   #Balls{
     padding: 2%;
+  
   }
+  .Card-title {
+    max-width: 80% !important;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 2;  /* Number of lines before cutting off */
+    -webkit-box-orient: vertical;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    word-wrap: break-word !important;
+    white-space: normal !important;  /* Allows text wrapping */
+  }
+  
+  
+  .price-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center everything */
+    white-space: nowrap;
+    max-width: 150px; /* Adjust as needed */
+  }
+  
+  .price {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center !important;
+    padding-right: 10px;
+
+  }
+    
+
 #FormDiv{
   padding: 2%;
 }
@@ -89,6 +117,6 @@ section{
 .padding{
   padding-top: 1%;
   padding-bottom: 1%;
-  padding-left: 17%;
-  padding-right: 17%;
+  padding-left: 0.4%;
+  padding-right: 0.4%;
 }

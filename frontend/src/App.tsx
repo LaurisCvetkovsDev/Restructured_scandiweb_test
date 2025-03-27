@@ -1,12 +1,11 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
 import "nes.css/css/nes.min.css";
 import Layout from "./Layout";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-
-import Form from "./Pages/Form";
-import Grid from "./Pages/Grid";
+import Form from "./pages/Form";
+import Grid from "./pages/Grid";
 
 const App: React.FC = () => {
   return (

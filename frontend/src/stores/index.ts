@@ -1,6 +1,6 @@
 import { create } from "zustand";
-import { deleteFilm, fetchFilms } from "../Services/fimService";
-import { FilmData } from "../Types/FilmData";
+import { deleteFilm, fetchFilms } from "../services/fimService";
+import { FilmData } from "../types/FilmData";
 
 type FilmStore = {
   selectedItems: number[];
