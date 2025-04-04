@@ -11,10 +11,6 @@ const Grid = () => {
     setFilms();
   }, []);
 
-  useEffect(() => {
-    setFilms();
-  }, [films]);
-
   if (films.length === 0) {
     console.log("State is empty");
     return <NoData />;

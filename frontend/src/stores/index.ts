@@ -32,14 +32,16 @@ export const useFilmStore = create<FilmStore>((set, get) => ({
     console.log("Selected items:", updatedSelectedItems);
   },
 
-  toggleDelete: () => {
-    const { selectedItems } = get();
-
+  toggleDelete: async () => {
+    const { selectedItems, setFilms } = get();
+  
     if (selectedItems.length > 0) {
       console.log("Deleting items:", selectedItems);
-
+  
+      await deleteFilm(selectedItems); 
       set({ selectedItems: [] });
-      deleteFilm(selectedItems);
+  
+      await setFilms(); 
     } else {
       console.warn("No items selected for deletion.");
     }
