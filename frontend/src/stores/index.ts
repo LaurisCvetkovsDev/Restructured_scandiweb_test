@@ -46,4 +46,8 @@ export const useFilmStore = create<FilmStore>((set, get) => ({
       console.warn("No items selected for deletion.");
     }
   },
+
+
+
+
 }));

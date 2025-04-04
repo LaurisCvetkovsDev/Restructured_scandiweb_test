@@ -12,7 +12,6 @@ const Grid = () => {
   }, []);
 
   if (films.length === 0) {
-    console.log("State is empty");
     return <NoData />;
   }
 
