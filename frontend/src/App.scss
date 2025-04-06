@@ -1,0 +1,123 @@
+@import '@fontsource/press-start-2p';
+
+$padding-small: 2%;
+$padding-medium: 5%;
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin: auto 0.5% 0.5% 0.5% !important;
+}
+
+.table {
+  button {
+    width: auto;
+    padding: 5px 8px 4px 8px;
+    font-size: 12px;
+    vertical-align: middle !important;
+    text-align: center;
+  }
+}
+
+td {
+  vertical-align: middle !important;
+  text-align: center;
+}
+
+h1, h2 {
+  padding: $padding-small;
+}
+
+#FilterID {
+  padding: $padding-medium;
+}
+
+table {
+  align-content: center !important;
+  justify-content: center;
+  align-items: center;
+}
+
+#ImageGrid {
+  object-fit: cover;
+}
+
+#GridDiv {
+  padding: $padding-medium;
+  height: 320px;
+}
+
+#ImageDiv {
+  height: 100px;
+}
+
+.image-item {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    padding: $padding-small;
+  }
+}
+
+#Balls {
+  padding: $padding-small;
+}
+
+.Card-title {
+  max-width: 80% !important;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+  word-wrap: break-word !important;
+  white-space: normal !important;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  max-width: 150px;
+
+  .price {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: center !important;
+    padding-right: 10px;
+  }
+}
+
+#FormDiv {
+  padding: $padding-small;
+}
+
+.center-table {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  padding: 0.3%;
+}
+
+.delete-button {
+  margin-left: 19.5% !important;
+}
+
+.padding {
+  padding: 1% 0.4%;
+}

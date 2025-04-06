@@ -1,6 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
+import "./App.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "nes.css/css/nes.min.css";
 import Layout from "./Layout";
