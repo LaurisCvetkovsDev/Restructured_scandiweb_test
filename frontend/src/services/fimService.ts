@@ -9,7 +9,7 @@ export const fetchFilms = async (): Promise<FilmData[]> => {
 };
 
 
-export const submitFilm = async (formData: { name: string; price: string; category: string; URL: string}) => {
+export const submitFilm = async (formData: {SKU: string; name: string; price: string; category: string;}) => {
   await fetch(`${API_BASE}/Submit.php`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

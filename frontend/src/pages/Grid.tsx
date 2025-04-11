@@ -35,9 +35,6 @@ const Grid = () => {
                     </p>
                     <div className="card-body" id="GridDiv">
                       {" "}
-                      <div className="image-item">
-                        <img src={FilmData.URL} alt="Film" />
-                      </div>
                       <p className="card-text">{FilmData.category}</p>
                       <div className="price-container">
                         <p

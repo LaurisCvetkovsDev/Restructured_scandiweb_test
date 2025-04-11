@@ -8,6 +8,7 @@ type FilmStore = {
   toggleDelete: () => void;
   films: FilmData[];
   setFilms: () => void;
+  toggleSave: () => void;
 };
 
 export const useFilmStore = create<FilmStore>((set, get) => ({
@@ -16,6 +17,9 @@ export const useFilmStore = create<FilmStore>((set, get) => ({
   setFilms: async () => {
     const data = await fetchFilms();
     set({ films: data });
+  },
+  toggleSave: async () =>{
+
   },
 
   selectedItems: [],
