@@ -25,7 +25,7 @@ const Grid = () => {
             <div className="row">
               {films.map((FilmData) => (
                 <div
-                  key={FilmData.ID}
+                  key={FilmData.id}
                   className="col-12 col-sm-6 col-md-4 col-lg-3 "
                   id="Balls"
                 >
@@ -35,7 +35,6 @@ const Grid = () => {
                     </p>
                     <div className="card-body" id="GridDiv">
                       {" "}
-                      <p className="card-text">{FilmData.category}</p>
                       <div className="price-container">
                         <p
                           className="card-text price"
@@ -49,10 +48,16 @@ const Grid = () => {
                         <input
                           type="checkbox"
                           className="nes-checkbox"
-                          onChange={() => toggleSelection(FilmData.ID)}
+                          onChange={() => toggleSelection(FilmData.id)}
                         />
                         <span>Delete</span>
                       </label>
+                      <p
+                          className="card-text price"
+                          title={`${FilmData.}`}
+                        >
+                          {FilmData.price}
+                        </p>
                     </div>
                   </div>
                 </div>
